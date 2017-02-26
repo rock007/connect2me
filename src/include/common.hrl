@@ -1,0 +1,3 @@
+
+%-define(SD_SERVERS, 'SD_SERVERS').
+-define(ALL_SERVER_PLAYERS, 10000).
