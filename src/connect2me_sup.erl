@@ -28,6 +28,9 @@ start_link() ->
 
 %% Child :: {Id,StartFunc,Restart,Shutdown,Type,Modules}
 init([]) ->
+	io:format("init oooooo",[]),
+	%%lager:warning("Some message with a term: ~p", ["loog"]),
+	masterServer:start(3,10022),
     {ok, { {one_for_all, 0, 1}, []} }.
 
 %%====================================================================
