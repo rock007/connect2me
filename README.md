@@ -14,29 +14,4 @@ Build
 
     $ rebar3 compile
 
-
-
-{erl_opts, [debug_info]}.
-{deps, [
-	{cowboy, {git, "git://github.com/ninenines/cowboy.git", {tag, "1.0.4"}}},
-	{lager, {git, "git://github.com/basho/lager.git", {tag, "3.2.4"}}},
-  {jsx, {git, "https://github.com/talentdeficit/jsx.git", {branch, "v2.8.0"}}}
-]}.
-
-{relx, [{release, { connect2me, "0.1.0" },
-         [connect2me,
-          sasl]},
-
-        {sys_config, "./config/sys.config"},
-        {vm_args, "./config/vm.args"},
-
-        {dev_mode, true},
-        {include_erts, false},
-
-        {extended_start_script, true}]
-}.
-
-{profiles, [{prod, [{relx, [{dev_mode, false},
-                            {include_erts, true}]}]
-            }]
-}.
+    $rebar3 as prod tar

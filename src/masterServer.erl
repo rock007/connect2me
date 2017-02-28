@@ -46,6 +46,7 @@ loop(S) ->
         {tcp,S,Data} ->
             Answer = process(Data), % Not implemented in this example
             gen_tcp:send(S,Answer),
+            %%gen_tcp:send(S, ["message text我们",0]),%%"message text\0"
             loop(S);
       
         {tcp_closed,S} ->
@@ -56,5 +57,5 @@ loop(S) ->
 
  process(Data)->
  	io:format("~s answer is returned ~w - goodbye!~n",[Data,ok]),
-    ok.
+    "ok\0".
  	
