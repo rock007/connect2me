@@ -30,6 +30,8 @@ loop(Socket)->
 	receive
 		{tcp,Socket,Bin}->
 			io:format("receive ~p~n",[Bin]),
+
+			%%AllBin=[Bin,AllBin],	
 			decodePacket(Bin),
 			%%gen_tcp:send(Socket, "ok"),
 			send(Socket,3,100,make_option(),<<"ok">>),
