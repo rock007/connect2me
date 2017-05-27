@@ -1,4 +1,6 @@
+-module(file_receive_handler).
 
+-export([file_name_receiver/1,save_file/2,send_file/4]).
 
 file_name_receiver(Socket)->
     {ok,FilenameBinaryPadding}=gen_tcp:recv(Socket,30),
