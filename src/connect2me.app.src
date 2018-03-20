@@ -1,5 +1,5 @@
 {application, connect2me,
- [{description, "An OTP application"},
+ [{description, "erlang demo, socket learn"},
   {vsn, "0.1.0"},
   {registered, []},
   {mod, { connect2me_app, []}},

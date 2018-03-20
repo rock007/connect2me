@@ -1,0 +1,14 @@
+
+syntax = "proto2";
+
+package com.paintfriend.chat.proto;
+
+message registReq {
+	
+	required string nickname = 1;
+	
+	required string password = 2;
+	
+	required string mobile = 3;
+	
+}

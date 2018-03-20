@@ -1,0 +1,11 @@
+syntax = "proto2";
+
+package com.paintfriend.chat.proto;
+
+message releaseGroupReq {
+
+    required int32 id = 1;
+	
+	optional string reson = 2;
+	
+}

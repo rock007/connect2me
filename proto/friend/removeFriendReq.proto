@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package com.paintfriend.chat.proto;
+
+message removeFriendReq {
+	
+	required string toUser = 1;
+	
+	required string sendFrom = 2;
+	
+}

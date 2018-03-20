@@ -1,0 +1,13 @@
+
+syntax = "proto2";
+
+package com.paintfriend.chat.proto;
+
+message searchFriendReq {
+	
+	required string account = 1;
+	
+	optional string mobile = 2;
+	
+}
+

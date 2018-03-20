@@ -1,0 +1,21 @@
+syntax = "proto2";
+
+package com.paintfriend.chat.proto;
+
+message newGroupReq {
+	
+	required string groupName = 1;
+	
+	optional int32 groupLevel = 2;
+	
+	optional string note = 3;
+	
+	optional string remarks = 4;
+	
+	required string ownUser = 5;
+	
+	required int32 status  = 6;
+	
+	optional string  createDate = 7;
+	
+}

@@ -1,0 +1,14 @@
+
+syntax = "proto2";
+
+package com.paintfriend.chat.proto;
+
+message respBuffer {
+	
+	required int32 result = 1;
+	
+	required string msg = 2;
+	
+	optional string data = 3;
+	
+}

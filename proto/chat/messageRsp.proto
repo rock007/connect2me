@@ -1,0 +1,31 @@
+syntax = "proto2";
+
+
+package com.paintfriend.chat.proto;
+
+
+message messageBuffer {
+
+    required int32 id  = 1;
+	
+	required string content  = 2;
+	
+	optional int32 groupId  = 3;
+	
+	required string toUser  = 4;
+	
+	required string sendFrom  = 5;
+	
+	required int32 status  = 6;
+	
+	optional string recDate  = 7;
+	
+	optional string sendDate  = 8;
+	
+}
+
+message chatMessageListRsp {
+
+    repeated messageBuffer messages = 1;
+    
+}

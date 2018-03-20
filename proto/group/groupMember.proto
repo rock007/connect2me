@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package com.paintfriend.chat.proto;
+
+message groupMember {
+
+    required int32 groupId  = 1;
+	
+	required string userId  = 2;
+	
+	optional string nickName  = 3;
+	
+}

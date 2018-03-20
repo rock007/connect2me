@@ -53,7 +53,7 @@ ok.
 
 decodePacket(Packet)->
 	<<HeaderLen:32/integer-big,CmdId:32/integer-big,Seq:32/integer-big,FileName:36/bytes,BodyLen:32/integer-big,Body/bytes>>=Packet,
-	FilePath=string:concat("d:\\temp\\",FileName),
+	FilePath=string:concat("E:\\person\\meizu\\",FileName),
 	case file:write_file(FilePath, Body) of
 		ok  ->
 			io:format("~nsave file ~p~n",FileName);

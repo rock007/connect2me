@@ -1,0 +1,26 @@
+
+syntax = "proto2";
+
+package com.paintfriend.chat.proto;
+
+message chatFriend {
+	
+	required string toUser = 1;
+	
+	required string sendFrom = 2;
+	
+	required int32 reqStatus = 3;
+	
+	required string nickName = 4;
+		
+	string  acceptDate = 5;
+	
+	string createDate = 6;
+	
+}
+
+message friendListRsp {
+
+    repeated chatFriend friends = 1;
+}
+

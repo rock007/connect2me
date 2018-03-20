@@ -1,0 +1,24 @@
+
+syntax = "proto2";
+
+package com.paintfriend.chat.proto;
+
+message viewProfileRsp {
+	
+	required string uid = 1;
+	
+	required string nickname = 2;
+	
+	required int32 status = 3;
+	
+	required string mobile = 4;
+	
+	optional string avatar = 5;
+	
+	optional string rolestr = 6;
+	
+	optional string lat = 7;
+	 
+	optional string lng = 8;
+	
+}

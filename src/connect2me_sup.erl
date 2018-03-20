@@ -31,10 +31,11 @@ init([]) ->
 	io:format("init oooooo",[]),
 	%%lager:warning("Some message with a term: ~p", ["loog"]),
 	%%masterServer:start(3,10022),
-	tcp_server:start(10023),
-	io:format("tcp_server:start at 10023",[]),
-	udp_server:start(10024),
-	io:format("udp_server:start at 10024",[]),
+	%%tcp_server:start(10023),
+	clock:start(5000,fun() -> io:format(" tick ~p~n ",[erlang:now()]) end),
+	%%io:format("tcp_server:start at 10023",[]),
+	%%udp_server:start(10024),
+	%%io:format("udp_server:start at 10024",[]),
     {ok, { {one_for_all, 0, 1}, []} }.
 
 %%====================================================================

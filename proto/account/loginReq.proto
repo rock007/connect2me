@@ -1,0 +1,12 @@
+
+syntax = "proto2";
+
+package com.paintfriend.chat.proto;
+
+message loginReq {
+	
+	required string account = 1;
+	
+	required string password = 2;
+	
+}
